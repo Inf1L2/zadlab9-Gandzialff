@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package pl.edu.ur.oopl9;
-
+import java.util.*;
 /**
  *
  * @author maarchyl
@@ -16,6 +16,29 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+       int w;
+       Scanner s = new Scanner(System.in);
+        System.out.println("Wybierz numer zadania(1-4)");
+        w = s.nextInt();
+       switch (w)
+       {
+           case 1:
+               Zadanie1.zad1();
+               break;
+           case 2:
+               Zadanie2.zad2();
+               break;
+           case 3:
+               Zadanie3.zad3();
+               break;
+           case 4:
+               Zadanie4.zad4();
+               break;
+               default:
+                   System.out.println("Nie ma takiego zadania! Program zakończy pracę!");
+                   break;
+       }
+
     }
     
 }
